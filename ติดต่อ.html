@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- สำคัญสำหรับ responsiveness -->
+  <title>CONTACT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .Tophy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .Tophy-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .Tophy-item img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .Tophy-item span {
+      font-size: 1.1em;
+      word-break: break-word;
+    }
+
+    .Tophy-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Responsive Text */
+    @media (max-width: 480px) {
+      .title {
+        font-size: 2em;
+      }
+
+      .Tophy-item img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .Tophy-item span {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">sum</a></li>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="recipe.html">Trophy</a></li>
+        <li><a href="Tophy.html" class="active">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="title">Contact</h1>
+
+    <div class="Tophy-grid">
+      <a href="https://www.instagram.com/bxitong04" target="_blank" class="Tophy-item">
+        <img src="Maison (13).png" alt="Instagram">
+        <span>@bxitong04</span>
+      </a>
+
+      <a href="https://line.me/ti/p/~baitong043" target="_blank" class="Tophy-item">
+        <img src="Maison (14).png" alt="Line">
+        <span>baitong043</span>
+      </a>
+
+      <a href="https://www.facebook.com/profile.php?id=100" target="_blank" class="Tophy-item">
+        <img src="Maison (15).png" alt="Facebook">
+        <span>นันทัชพร ทองลอย</span>
+      </a>
+
+      <a href="https://wa.me/66969043718" target="_blank" class="Tophy-item">
+        <img src="Maison (16).png" alt="WhatsApp">
+        <span>096-904-3718</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

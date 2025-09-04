@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag -->
+  <title>CONTACT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-frame img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+    }
+
+    .text-frame {
+      font-size: 2.5em;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .text-scatter {
+      position: absolute;
+      font-size: 1.5em;
+      color: red;
+      opacity: 0.7;
+    }
+
+    .text-scatter.red { color: red; }
+    .text-scatter.orange { color: orange; }
+    .text-scatter.yellow { color: yellow; }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        padding: 10px 0;
+      }
+
+      nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .text-frame {
+        font-size: 2em;
+      }
+
+      .text-scatter {
+        font-size: 1.2em;
+      }
+
+      .image-frame img {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav ul li a {
+        font-size: 16px;
+      }
+
+      .text-frame {
+        font-size: 1.8em;
+      }
+
+      .text-scatter {
+        font-size: 1em;
+      }
+
+      .image-frame img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">sum</a></li>
+        <li><a href="home.html" class="active">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="recipe.html">TROPHY</a></li>
+        <li><a href="Tophy.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main style="position: relative; min-height: 600px;">
+    <h1 class="text-frame">Home</h1>
+
+    <div class="image-frame">
+      <img src="Maison (6).png" alt="Home Image" width="350">
+    </div>
+
+    <!-- ข้อความกระจาย -->
+    <span class="text-scatter red" style="top: 50px; left: 60%;">Hello</span>
+    <span class="text-scatter orange" style="top: 200px; left: 65%;">Hello</span>
+    <span class="text-scatter yellow" style="top: 350px; left: 70%;">Hello</span>
+    <span class="text-scatter red" style="top: 250px; left: 40%;">Hi</span>
+    <span class="text-scatter orange" style="top: 420px; left: 60%;">Hi</span>
+  </main>
+</body>
+</html>
